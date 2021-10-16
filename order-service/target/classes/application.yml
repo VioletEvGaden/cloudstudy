@@ -6,8 +6,12 @@ spring:
     username: root
     password: zh.0326
     driver-class-name: com.mysql.jdbc.Driver
-    application:
+  application:
       name: orderservice
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
